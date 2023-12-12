@@ -1,0 +1,16 @@
+git init
+git add .
+git commit -m " "
+git status
+git config --global user.name""
+git congig --global user.email""
+git branch <branch_name>
+git checkout<branch_name>
+gitcheckout -b <new_branch>
+git merge<branch name>
+
+
+
+git remote add origin<address>
+git pull <branch name>
+git push -u origin master
