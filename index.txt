@@ -1,0 +1,46 @@
+Index. txt
+git checkout -b feature_branch
+# Make changes git add . git commit -m "Implement new feature"
+git checkout main
+git merge feature_branch
+git push origin main
+git checkout -b bug_fix_branch
+Make changes git add . git commit -m "Fix a bug"
+git reset --hard HEAD^
+git push origin bug_fix_branch --force
+
+
+
+git clone <remote_repository_url>
+cd <repository_directory>
+git branch <branch_name>
+git checkout <branch_name>  # or use 'git switch <branch_name>' (Git 2.23 and later)
+# Make changes to files
+git add .  # Stage changes
+git commit -m "Commit message"
+git push origin <branch_name>
+git checkout -b <new_branch_name>  # or use 'git switch -c <new_branch_name>' (Git 2.23 and later)
+git branch
+
+
+
+
+git clone <repository_url>
+cd <repository_name>
+git checkout -b feature_branch
+git add .
+git commit -m "Implemented feature"
+git push origin feature_branch
+git checkout main
+git pull origin main
+
+
+
+git clone <repository_url>
+cd <repository_name>
+git checkout -b feature_branch
+git add .
+git commit -m "Implemented feature"
+git push origin feature_branch
+git checkout main
+git pull origin main
